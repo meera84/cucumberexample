@@ -1,0 +1,5 @@
+<customer customerId="67890">
+	<name>barney</name>
+	<email>barney@gmail.com</email>
+	<age>50</age>
+</customer>
