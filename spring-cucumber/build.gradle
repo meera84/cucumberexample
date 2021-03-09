@@ -1,0 +1,32 @@
+plugins {
+	id 'org.springframework.boot' version '2.4.3'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+def CUCUMBER_VERSION = '6.6.0'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework:spring-web'
+
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    testImplementation "io.cucumber:cucumber-java:$CUCUMBER_VERSION"
+    testImplementation "io.cucumber:cucumber-junit:$CUCUMBER_VERSION"
+    testImplementation "io.cucumber:cucumber-spring:$CUCUMBER_VERSION"
+    testImplementation "io.cucumber:cucumber-junit-platform-engine:$CUCUMBER_VERSION"
+}
+
+test {
+	//useJUnitPlatform()
+    useJUnit()
+}

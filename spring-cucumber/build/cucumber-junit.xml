@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="2.234">
+    <testcase classname="Is it Friday yet?" name="Today is or is not Friday" time="0.056">
+        <failure message="expected: &lt;&lt;answer&gt;&gt; but was: &lt;Nope&gt;" type="org.opentest4j.AssertionFailedError">
+            <![CDATA[Given today is "<day>"......................................................passed
+When I ask whether it's Friday yet..........................................passed
+Then I should be told "<answer>"............................................failed
+
+StackTrace:
+org.opentest4j.AssertionFailedError: expected: <<answer>> but was: <Nope>
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)
+	at com.example.demo.SomeSteps.i_should_be_told(SomeSteps.java:28)
+	at ✽.I should be told "<answer>"(classpath:com/example/demo/test.feature:7)
+]]>
+        </failure>
+    </testcase>
+</testsuite>
