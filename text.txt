@@ -1,0 +1,20 @@
+Assignment 1 - Regarding JaxB
+
+	• To unmarshall tagging a Java Object Class (In the event it is auto-generated)
+		○ JAXBElement<Customer> customer = (JAXBElement<Customer>) jaxbUnmarshaller.unmarshal(new StreamSource(is),Customer.class);
+	
+Assignment 2 - Regarding Active MQ
+	1. Install the active mq classic plugin
+	2. Create the application
+	3. Create the spring boot application tapping on the spring.start.io analyser
+		a. select the necessary dependencies (Spring web), (ActiveMq)
+	4. Go to maven repository and grab the cucumber dependencies to add onto build.gradle. 
+		a. make sure to indicate as testimplementation with the same version. 
+		b. Can remove junit reference 
+	• bin \activemq start
+
+Application -> ACtiveMq <- SpringBoot Cucumber BDD Application
+
+Active Mq --System1 --System2
+
+https://cucumber.io/docs/guides/10-minute-tutorial/
