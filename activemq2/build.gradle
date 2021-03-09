@@ -1,0 +1,42 @@
+plugins {
+	id 'org.springframework.boot' version '2.4.3'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+def CUCUMBER_VERSION = '6.6.0'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-activemq'
+	implementation 'org.springframework.boot:spring-boot-starter-amqp'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	//testImplementation 'com.unboundid:unboundid-ldapsdk'
+	//testImplementation 'org.springframework.amqp:spring-rabbit-test'
+	// https://mvnrepository.com/artifact/io.cucumber/cucumber-java
+//	testImplementation group: 'io.cucumber', name: 'cucumber-java', version: '6.10.0'
+////	// https://mvnrepository.com/artifact/io.cucumber/cucumber-junit
+////	testImplementation group: 'io.cucumber', name: 'cucumber-junit', version: '6.10.0'
+//	// https://mvnrepository.com/artifact/io.cucumber/cucumber-junit-platform-engine
+//	testImplementation group: 'io.cucumber', name: 'cucumber-junit-platform-engine', version: '6.10.0'
+//
+//	// https://mvnrepository.com/artifact/io.cucumber/cucumber-spring
+//	testImplementation group: 'io.cucumber', name: 'cucumber-spring', version: '6.10.0'
+	testImplementation "io.cucumber:cucumber-java:$CUCUMBER_VERSION"
+	testImplementation "io.cucumber:cucumber-junit:$CUCUMBER_VERSION"
+	testImplementation "io.cucumber:cucumber-spring:$CUCUMBER_VERSION"
+	testImplementation "io.cucumber:cucumber-junit-platform-engine:$CUCUMBER_VERSION"
+
+}
+
+test {
+	useJUnit()
+}

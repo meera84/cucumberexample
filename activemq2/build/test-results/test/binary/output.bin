@@ -1,0 +1,55 @@
+›16:32:09.220 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+°16:32:09.239 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+˛16:32:09.292 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.example.demo.CucumberTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+Û16:32:09.310 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.CucumberTest], using SpringBootContextLoader
+ã16:32:09.317 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.demo.CucumberTest]: class path resource [com/example/demo/CucumberTest-context.xml] does not exist
+ç16:32:09.318 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.demo.CucumberTest]: class path resource [com/example/demo/CucumberTestContext.groovy] does not exist
+˝16:32:09.320 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.demo.CucumberTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+æ16:32:09.321 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.demo.CucumberTest]: CucumberTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+Ä16:32:09.394 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.example.demo.CucumberTest]
+ï16:32:09.467 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\Users\YOGA 710\Desktop\java\nus\activemq2\build\classes\java\main\com\example\demo\Activemq2Application.class]
+›16:32:09.469 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.demo.Activemq2Application for test class com.example.demo.CucumberTest
+Œ16:32:09.611 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.example.demo.CucumberTest]: using defaults.
+¥16:32:09.612 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+â16:32:09.635 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@52d03f6f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6a55e14f, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@18c61fe8, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6794aa44, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@34ecca9e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@71760ad5, org.springframework.test.context.transaction.TransactionalTestExecutionListener@59e7724c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1be335be, org.springframework.test.context.event.EventPublishingTestExecutionListener@4909a466, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@8683f30, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6a7f4963, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@68b3df57, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6c1d6cb3, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@25455fbf, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@35613e25]
+¯16:32:09.668 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}
+
+)  .   ____          _            __ _ _
+* /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
++( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+, \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
++  '  |____| .__|_| |_|_| |_\__, | / / / /
+* =========|_|==============|___/=/_/_/_/
+, :: Spring Boot ::                (v2.4.3)
+
+ˆ2021-03-06 16:32:10.262  INFO 7332 --- [    Test worker] com.example.demo.CucumberTest            : Starting CucumberTest using Java 11.0.9.1 on DESKTOP-DCEA9IO with PID 7332 (started by YOGA 710 in C:\Users\YOGA 710\Desktop\java\nus\activemq2)
+¶2021-03-06 16:32:10.270  INFO 7332 --- [    Test worker] com.example.demo.CucumberTest            : No active profile set, falling back to default profiles: default
+í2021-03-06 16:32:12.424  INFO 7332 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-06 16:32:12.444  INFO 7332 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+ï2021-03-06 16:32:12.445  INFO 7332 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+ò2021-03-06 16:32:12.663  INFO 7332 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+•2021-03-06 16:32:12.664  INFO 7332 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2359 ms
+ú2021-03-06 16:32:13.260  INFO 7332 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+í2021-03-06 16:32:14.427  INFO 7332 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+}2021-03-06 16:32:14.427  INFO 7332 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+Ü2021-03-06 16:32:14.428  INFO 7332 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+°2021-03-06 16:32:14.517  INFO 7332 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+£2021-03-06 16:32:14.534  INFO 7332 --- [    Test worker] com.example.demo.CucumberTest            : Started CucumberTest in 4.862 seconds (JVM running for 7.782)
+
+QScenario: Sunday isn't Friday        [90m# com/example/demo/Test1.feature:4[0m
+n  [32mGiven [0m[32mtoday is Sunday[0m              [90m# com.example.demo.StepsDefinition.today_is()[0m
+É  [32mWhen [0m[32mI ask whether it's Friday yet[0m [90m# com.example.demo.StepsDefinition.i_ask_whether_it_s_Friday_yet()[0m
+ì  [32mThen [0m[32mI should be told [0m[32m[1m"Nope"[0m       [90m# com.example.demo.StepsDefinition.i_should_be_told(java.lang.String)[0m
+  ][32m[1m???????????????????????????????????????????????????????????????????????????????[0m
+  {[32m[1m?[0m Share your Cucumber Report with your team at [36m[1m[4mhttps://reports.cucumber.io[0m    [32m[1m?[0m
+  j[32m[1m?[0m Activate publishing with one of the following:                              [32m[1m?[0m
+  j[32m[1m?[0m                                                                             [32m[1m?[0m
+  |[32m[1m?[0m src/test/resources/cucumber.properties:    [36mcucumber.publish.enabled[0m=[36mtrue[0m    [32m[1m?[0m
+  |[32m[1m?[0m Environment variable:                      [36mCUCUMBER_PUBLISH_ENABLED[0m=[36mtrue[0m    [32m[1m?[0m
+  |[32m[1m?[0m JUnit:                                     [36m@CucumberOptions[0m(publish = [36mtrue[0m) [32m[1m?[0m
+  j[32m[1m?[0m                                                                             [32m[1m?[0m
+  s[32m[1m?[0m More information at [36mhttps://reports.cucumber.io/docs/cucumber-jvm[0m           [32m[1m?[0m
+  j[32m[1m?[0m                                                                             [32m[1m?[0m
+  Ç[32m[1m?[0m To disable this message, add [1mcucumber.publish.quiet[0m[1m=[0m[1mtrue[0m to                 [32m[1m?[0m
+  r[32m[1m?[0m [1msrc/test/resources/cucumber.properties[0m                                      [32m[1m?[0m
+  ][32m[1m???????????????????????????????????????????????????????????????????????????????[0m

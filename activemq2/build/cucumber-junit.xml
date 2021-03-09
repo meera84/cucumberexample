@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="5.94">
+    <testcase classname="Is it Friday yet?" name="Sunday isn't Friday" time="0.045">
+        <system-out>
+            <![CDATA[Given today is Sunday.......................................................passed
+When I ask whether it's Friday yet..........................................passed
+Then I should be told "Nope"................................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
